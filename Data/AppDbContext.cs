@@ -1,0 +1,13 @@
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace WebAPI.Data
+{
+    public class AppDbContext : DbContext
+    {
+        // Construtor: recebe as opcoes de conexoes e serao usadas dentro do App e tem nome de options e como base options
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+
+        }
+    }
+}
