@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using WebAPI.Models;
 
 namespace WebAPI.Data
 {
@@ -9,5 +10,8 @@ namespace WebAPI.Data
         {
 
         }
+        // Tabelas
+        public DbSet<AutorModel> Autores { get; set; }
+        public DbSet<LivroModel> Livros { get; set; }
     }
 }
